@@ -3,6 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import AvatarStatus from "../Avatar/Avatar";
 import { Fade } from "react-awesome-reveal";
+import 'animate.css/animate.min.css';
 
 const avatarNotifications = [
   {
@@ -181,12 +182,13 @@ export default function Popup() {
           avatarNotifications?.map((ele) =>
             <motion.li variants={itemVariants}>
               <Fade duration={1000} damping={100} delay={500}>
-
-                <AvatarStatus
-                  imageSrc={ele.imageSrc}
-                  notificationCount={ele.notificationCount}
-                  isOnline={ele.isOnline}
-                />
+              <div className="animate__animated animate__rollIn" >
+                  <AvatarStatus
+                    imageSrc={ele.imageSrc}
+                    notificationCount={ele.notificationCount}
+                    isOnline={ele.isOnline}
+                  />
+                </div>
               </Fade>
             </motion.li>
           )

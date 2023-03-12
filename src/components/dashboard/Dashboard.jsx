@@ -11,11 +11,9 @@ import { MdLock, MdOutlineKeyboardArrowDown, MdBubbleChart } from "react-icons/m
 import Card from "../cards/Card";
 import Popup from "../NotificationPopup/Popup";
 import { Fade, Slide } from "react-awesome-reveal";
-
-
+import 'animate.css/animate.min.css';
 
 const data1 = [
-
      {
           title: "Create calendar, chat and email app pages",
           titleNo: 1,
@@ -166,13 +164,15 @@ const Dashboard = () => {
 
                <div className="dashboardBox">
 
-                    <Slide triggerOnce cascade direction="left" duration={1000} delay={500}>
-
+                    {/* <Slide triggerOnce cascade direction="left" duration={1000} delay={500}> */}
+                    <div className="animate__animated animate__flip" >
                          <div className="title">
-                              <h3>Task Boards</h3>
+                              <h3 >Task Boards</h3>
                               <FaPen className="titleLogo" />
                          </div>
-                    </Slide>
+                    </div>
+                      
+                    {/* </Slide> */}
 
                     <Slide triggerOnce cascade direction="left" duration={1000} delay={500}>
                          <div className="tabs">
@@ -282,28 +282,32 @@ const Dashboard = () => {
                                    <BsThreeDots className="boardIcons" />
                               </div>
 
+                              <div className="animate__animated animate__rollIn" >
+                         
+                                   <div className="collection">
+                                        {
+                                             data1?.map((ele) =>
+                                               <Fade cascade duration={1000} delay={500}>
+                                                  
+                                                            <Card
+                                                                 title={ele.title}
+                                                                 titleNo={ele.titleNo}
+                                                                 tags1={ele.tags1}
+                                                                 tags2={ele.tags2}
+                                                                 tags3={ele.tags3}
+                                                                 maxImage={ele.maxImage}
+                                                                 addComment={ele.addComment}
+                                                                 comment={ele.comment}
+                                                                 btn={ele.btn}
+                                                                 image={ele.image}
 
-                              <div className="collection">
-                                   {
-                                        data1?.map((ele) =>
-                                             <Fade cascade duration={1000} delay={500}>
+                                                            />
+                                                  </Fade>
+                                       
+                                             )
+                                        }
+                                   </div>
 
-                                                  <Card
-                                                       title={ele.title}
-                                                       titleNo={ele.titleNo}
-                                                       tags1={ele.tags1}
-                                                       tags2={ele.tags2}
-                                                       tags3={ele.tags3}
-                                                       maxImage={ele.maxImage}
-                                                       addComment={ele.addComment}
-                                                       comment={ele.comment}
-                                                       btn={ele.btn}
-                                                       image={ele.image}
-
-                                                  />
-                                             </Fade>
-                                        )
-                                   }
                               </div>
 
 
@@ -314,44 +318,50 @@ const Dashboard = () => {
                                    <p>BlockLog Tasks <span>6</span> </p>
                                    <BsThreeDots className="boardIcons" />
                               </div>
+ 
+                              <div className="animate__animated animate__rollIn" >
+                                        <div className="collection">
+                                             {
+                                                  Data?.map((ele) =>
 
-                              <div className="collection">
-                                   {
-                                        Data?.map((ele) =>
+                                                  <Fade cascade duration={1000} delay={500}>
+                                                  
+                                                            <Card
+                                                                 title={ele.title}
+                                                                 titleNo={ele.titleNo}
+                                                                 tags1={ele.tags1}
+                                                                 tags2={ele.tags2}
+                                                                 tags3={ele.tags3}
+                                                                 maxImage={ele.maxImage}
+                                                                 addComment={ele.addComment}
+                                                                 comment={ele.comment}
+                                                                 btn={ele.btn}
+                                                                 image={ele.image}
 
-                                             <Fade cascade duration={1000} delay={500}>
-
-                                                  <Card
-                                                       title={ele.title}
-                                                       titleNo={ele.titleNo}
-                                                       tags1={ele.tags1}
-                                                       tags2={ele.tags2}
-                                                       tags3={ele.tags3}
-                                                       maxImage={ele.maxImage}
-                                                       addComment={ele.addComment}
-                                                       comment={ele.comment}
-                                                       btn={ele.btn}
-                                                       image={ele.image}
-
-                                                  />
-                                             </Fade>
-                                        )
-                                   }
+                                                            />
+                                                  </Fade>
+                                        
+                                                  )
+                                             }
+                                        </div>
                               </div>
-
                          </div>
                     </div>
 
                </div>
-               <Slide triggerOnce direction="right" duration={1000} cascade delay={500}>
-                    <div className="dashboardLeft">
+               {/* <Slide triggerOnce direction="right" duration={1000} cascade delay={500}> */}
+                   
+                    <div className="animate__animated animate__fadeInRightBig" >
+                         <div className="dashboardLeft">
 
-                         <div >
-                              <Popup />
+                              <div >
+                                   <Popup />
+                              </div>
                          </div>
                     </div>
 
-               </Slide>
+               {/* </Slide> */}
+
           </div>
 
      )

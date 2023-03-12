@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { FaBars, FaHome, FaLock, FaMoneyBill, FaUser, FaWallet } from "react-icons/fa";
+import { FaHome, FaLock, FaMoneyBill, FaUser, FaWallet } from "react-icons/fa";
 import { MdKeyboardArrowUp, MdLockPerson, MdInbox, MdDashboardCustomize, MdSpaceDashboard } from "react-icons/md";
 import { BiAnalyse } from "react-icons/bi";
 import { AiTwotoneFileExclamation } from "react-icons/ai";
