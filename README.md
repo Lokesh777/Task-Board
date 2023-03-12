@@ -1,5 +1,7 @@
 # Task-Board
-
+ 
+# Deploy link - https://glittering-valkyrie-1b702c.netlify.app/
+ 
 #Check App as following guidelines
 
 1):Responsive page at all screen size (destop,medium pad, mobile).
