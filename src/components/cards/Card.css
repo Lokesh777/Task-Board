@@ -1,0 +1,99 @@
+.cardContainer{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* width: 25rem; */
+}
+
+.cardFront{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.cardFront>p{
+    font-size: small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(95, 95, 95);
+    font-weight: 500;
+}
+
+.searchSubIcons1{
+    width: 1rem;
+    height: 1rem;
+    margin-top: .2rem;
+    color: darkturquoise;
+   }
+   .cardtop{
+    display: flex;
+    gap: .2rem;
+    color: darkturquoise;
+   }
+   .cardTag{
+    display: flex;
+    gap: .2rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: xx-small;
+   }
+   .btn2{
+    padding: 3px 10px;
+    border-radius: 10px;
+    color: orangered;
+    justify-content: center;
+    text-align: center;
+    align-items: center;;
+    font-weight: bold;
+    background-color: rgb(253, 217, 204);
+   }
+   .btn1{
+    padding: 3px 10px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: rgb(222, 222, 222);
+   }
+   .btn3{
+    padding: 3px 10px;
+    border-radius: 10px;
+    color:blue;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(225, 234, 251);
+   }
+   .addAvatar1{
+    border: 1px dotted gray;
+    padding: .5rem;
+    border-radius: 1.5rem;
+    margin-left: 1rem;
+   }
+.avtarGroup1{
+    display: flex;
+    /* margin-left: 40%; */
+    /* margin-top: .4rem; */
+}
+.logoPlus1{
+    color: rgb(190, 189, 189);
+   
+}
+.comment1{
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-top: .2rem;
+    color: rgb(214, 2, 186);
+    margin-left: 2px;
+}
+.add1{
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-top: .2rem;
+    color: rgb(224, 151, 4);
+    margin-right: 2px;
+}
